@@ -1,4 +1,3 @@
-![image](https://github.com/golonr1na/Software_Engineering/assets/36787577/216de1a1-fd24-445d-94c4-b66d69f98ff6)
 # Тема 2. Базовые операции языка Python
 Отчет по Теме #2 выполнил(а):
 - Кашилова Елизавета Александровна

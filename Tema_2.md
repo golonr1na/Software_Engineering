@@ -247,7 +247,7 @@ print(bool(a))
 
 ### Результат
 
-![Меню]()
+![Меню](https://github.com/golonr1na/Software_Engineering/blob/Тема_2/pictures/sr1.png)
 
 ### Выводы
 - Краткие Выводы
@@ -262,7 +262,7 @@ print(a, b, c, sep=', ')
 
 ### Результат
 
-![Меню]()
+![Меню](https://github.com/golonr1na/Software_Engineering/blob/Тема_2/pictures/sr2.png)
 
 ### Выводы
 - Краткие Выводы
@@ -277,7 +277,8 @@ print(num)
 
   ### Результат
 
-![Меню]()
+![Меню](https://github.com/golonr1na/Software_Engineering/blob/Тема_2/pictures/sr3,1.png)
+![Меню](https://github.com/golonr1na/Software_Engineering/blob/Тема_2/pictures/sr3,2.png)
 
 ### Выводы
 - Краткие Выводы
@@ -292,7 +293,7 @@ print(line*4)
 
 ### Результат
 
-![Меню]()
+![Меню](https://github.com/golonr1na/Software_Engineering/blob/Тема_2/pictures/sr4.png)
 
 ### Выводы
 - Краткие Выводы
@@ -307,7 +308,7 @@ print(f'Сегодня {date} {month} {year}', end='.\nВсего хорошег
 
 ### Результат
 
-![Меню]()
+![Меню](https://github.com/golonr1na/Software_Engineering/blob/Тема_2/pictures/sr5.png)
 
 ### Выводы
 - Краткие Выводы
@@ -325,7 +326,7 @@ print(line[:5], 'my', line[6:], sep=' ')
 
 ### Результат
 
-![Меню]()
+![Меню](https://github.com/golonr1na/Software_Engineering/blob/Тема_2/pictures/sr6.png)
 
 ### Выводы
 - Краткие Выводы
@@ -340,7 +341,7 @@ print(len(line))
 
 ### Результат
 
-![Меню]()
+![Меню](https://github.com/golonr1na/Software_Engineering/blob/Тема_2/pictures/sr7.png)
 
 ### Выводы
 - Краткие Выводы
@@ -355,7 +356,7 @@ print(line.lower())
 
 ### Результат
 
-![Меню]()
+![Меню](https://github.com/golonr1na/Software_Engineering/blob/Тема_2/pictures/sr8.png)
 
 ### Выводы
 
@@ -375,7 +376,7 @@ print(f'Результат деления: {a/b}')
 
 ### Результат
 
-![Меню]()
+![Меню](https://github.com/golonr1na/Software_Engineering/blob/Тема_2/pictures/sr9.png)
 
 ### Выводы
 - Краткие Выводы
@@ -391,7 +392,7 @@ print(line.replace('l', '1').upper())
 
 ### Результат
 
-![Меню]()
+![Меню](https://github.com/golonr1na/Software_Engineering/blob/Тема_2/pictures/sr10.png)
 
 ### Выводы
 

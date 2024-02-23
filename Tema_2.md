@@ -31,7 +31,7 @@ print(1.23)
 ```
 ### Результат.
 
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](https://github.com/golonr1na/Software_Engineering/blob/Тема_2/pictures/lab1.png)
 
 ## Выводы
 

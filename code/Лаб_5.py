@@ -1,0 +1,5 @@
+name = input('Ваше имя: ')
+date = input('Дата сегодня: ')
+today = input('День недели: ')
+print(f'Приветсвую {name}! Сегодня {date} число, день недели - {today}.')
+print(type(name), type(date), type(today), sep=', ')

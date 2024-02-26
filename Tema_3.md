@@ -378,7 +378,7 @@ print(memory)
 
 ### Результат
 
-![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_3/pictures/S5.png)
+![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_3/pictures/S_5.png)
 
 ### Выводы
 

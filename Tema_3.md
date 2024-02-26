@@ -251,12 +251,20 @@ else:
 ### Никаких других действий или циклов использовать нельзя.
 
 ```python
-
+x = 1
+for i in range(7):
+    if x == 6:
+        x *= 5
+    elif x == 31:
+        break
+    else:
+        x += 1
+print(x)
 ```
 
 ### Результат
 
-![Меню]()
+![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_3/pictures/S1.png)
 
 ### Выводы
 
@@ -266,12 +274,14 @@ else:
 ### Напишите программу, которая фразу «Hello World» выводит в обратном порядке, и каждая буква находится в одной строке консоли. При этом необходимо обязательно использовать любой цикл, а также программа должна занимать не более 3 строк в редакторе кода.
 
 ```python
-
+phrase = 'Hello world'[::-1]
+for i in range(len(phrase)):
+    print(phrase[i])
 ```
 
 ### Результат
 
-![Меню]()
+![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_3/pictures/S2.png)
 
 ### Выводы
 
@@ -285,12 +295,20 @@ else:
 ### Результатом работы программы будет выведенный в консоль диапазон. Программа должна занимать не более 10 строчек в редакторе кода.
 
 ```python
-
+num = int(input('Введите число от 0 до 10: '))
+if 10 < num or num < 0:
+    print('Ошибка. Число не принадлежит диапазону от 0 до 10.')
+elif 0 <= num <= 3:
+    print('Число в дипазоне между 0 и 3 включительно.')
+elif 3 < num < 6:
+    print('Число в дипазоне между 3 и 6.')
+elif 6 <= num <= 10:
+    print('Число в дипазоне между 6 и 10 включительно.')
 ```
 
   ### Результат
 
-![Меню]()
+![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_3/pictures/S3.png)
 
 ### Выводы
 
@@ -306,12 +324,30 @@ else:
 ### Проверьте работу программы минимум на 3 предложениях, чтобы охватить проверку всех поставленных условий.
   
 ```python
+text = input('Enter the text in English: ')
+vow = 0
+checkThe = 'Предложение не начинается на "The"'
+checkEnd = 'не заканчивается на "end"'
+length = len(text)
+text = text.lower()
+for i in range(length):
+    if text[i] == 'a' or text[i] == 'e' or text[i] == 'i' or text[i] == 'o' or text[i] == 'u':
+        vow += 1
+text.replace('ugly', 'beauty')
 
+if text[:3] == 'the':
+    checkThe = 'Предложение начинается на "The"'
+    if text[-4:] == ' end' or text[-5:] == ' end.':
+        checkEnd = 'заканчивается на "end"'
+
+print(f'{text}\nДлина предложения - {length}\nГласных "a, e, i, o, u" в тексте - {vow}\n{checkThe} и {checkEnd}.')
 ```
 
 ### Результат
 
-![Меню]()
+![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_3/pictures/S4_1.png)
+![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_3/pictures/S4_2.png)
+![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_3/pictures/S4_3.png)
 
 ### Выводы
 
@@ -326,12 +362,23 @@ else:
 
   
 ```python
-
+string = 'hello'
+memory = ' world'
+values = [0, 2, 4, 6, 8, 10]
+counter = 0
+while counter != 10:
+    if counter in values:
+        print(string + memory)
+        print(string)
+    counter += 1
+string = string + ' world'
+memory = string
+print(memory)
 ```
 
 ### Результат
 
-![Меню]()
+![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_3/pictures/S5.png)
 
 ### Выводы
 

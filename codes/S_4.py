@@ -11,7 +11,7 @@ text.replace('ugly', 'beauty')
 
 if text[:3] == 'the':
     checkThe = 'Предложение начинается на "The"'
-    if text[-4:] == ' end' or text[-5:] == ' end.':
-        checkEnd = 'заканчивается на "end"'
+if text[-4:] == ' end' or text[-5:] == ' end.':
+    checkEnd = 'заканчивается на "end"'
 
 print(f'{text}\nДлина предложения - {length}\nГласных "a, e, i, o, u" в тексте - {vow}\n{checkThe} и {checkEnd}.')

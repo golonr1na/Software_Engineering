@@ -330,7 +330,7 @@ else:
 
   ### Результат
 
-![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_3/pictures/S3.png)
+![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_3/pictures/S_3.png)
 
 ### Выводы
 

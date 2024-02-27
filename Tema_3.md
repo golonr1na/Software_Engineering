@@ -105,7 +105,7 @@ else:
 
 Схема выполнения кода:
 
-```mermaid
+```mermaid flowchart TD
 st=>start: Старт
 op=>operation: Ввод числа в консоль
 cond1=>condition1: Введеное число присутвует в списке?
@@ -115,11 +115,11 @@ op2=>operation2: Вывод "Переменная не четная и есть 
 op3=>operation3: Вывод "Переменной нет в массиве numbers"
 e=>end
 
-st->op->cond1
-cond1(yes)->cond2
-cond1(no)->op3->e
-cond2(yes)->op1->e
-cond2(no)->op2->e
+st-->op-->cond1
+cond1(yes)-->cond2
+cond1(no)-->op3->e
+cond2(yes)-->op1->e
+cond2(no)-->op2->e
 ```
 
 ## Лабораторная работа №5

@@ -1,4 +1,4 @@
-# Тема 1. Работа с репозиториями.
+![image](https://github.com/golonr1na/Software_Engineering_python/assets/36787577/1258c3ff-e387-4229-9e1e-642b3c3d03f5)# Тема 1. Работа с репозиториями.
 Отчет по Теме №1 выполнила:
 - Кашилова Елизавета Александровна
 - ЗПИЭ-21-1
@@ -49,6 +49,7 @@
 ## 2.9. Удаление файлов, веток, локальных и удалённых репозиториев
 ![image](https://github.com/golonr1na/Software_Engineering_python/assets/36787577/29e6d854-a764-4090-889f-a7faf1a1d71a)
 ![image](https://github.com/golonr1na/Software_Engineering_python/assets/36787577/fb186cac-32bc-4cb9-bd21-94c5456456fe)
+![image](https://github.com/golonr1na/Software_Engineering_python/assets/36787577/bcb4968b-acbb-4141-8d5b-385d853e58c9)
 
 ## 2.10. Отслеживание изменений в коммитах
 ![image](https://github.com/golonr1na/Software_Engineering_python/assets/36787577/a02eec5a-ba7d-4987-a9f7-eae43bde12f3)

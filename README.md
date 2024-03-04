@@ -1,7 +1,8 @@
 # Software_Engineering_python
 ### Данный репозиторий содержит учебные работы выполненные в процессе изучения предмета “Программная инженерия” в УрГЭУ.
 
-## Тема 1. Работа с репозиториями
+
+## * [Тема 1. Работа с репозиториями](https://github.com/golonr1na/Software_Engineering_python/blob/Tema_1/Tema_1.md)
 1.1. Установка
 
 1.2. Настройка
@@ -32,8 +33,7 @@
 
 1.15. Настройка .gitignore
 
-## Тема 2. Базовые операции языка Python
-https://github.com/golonr1na/Software_Engineering/blob/Тема_2/Tema_2.md
+## * [Тема 2. Базовые операции языка Python](https://github.com/golonr1na/Software_Engineering/blob/Тема_2/Tema_2.md)
 
 2.1. Комментарии на Python
 
@@ -49,7 +49,8 @@ https://github.com/golonr1na/Software_Engineering/blob/Тема_2/Tema_2.md
 
 2.7. Математические операции
 
-## Тема 3. Операторы, условия, циклы
+## * [Тема 3. Операторы, условия, циклы](https://github.com/golonr1na/Software_Engineering/blob/Тема_3/Tema_3.md)
+
 
 3.1. Основные операторы Python.
 
@@ -59,7 +60,7 @@ https://github.com/golonr1na/Software_Engineering/blob/Тема_2/Tema_2.md
 
  
 
-## Тема 4. Функции и стандартные модули/библиотеки
+## * [Тема 4. Функции и стандартные модули/библиотеки](https://github.com/golonr1na/Software_Engineering/blob/Тема_4/Tema_4.md)
 
 4.1. Функции в Python.
 
@@ -87,7 +88,7 @@ https://github.com/golonr1na/Software_Engineering/blob/Тема_2/Tema_2.md
 
 4.13. Встроенные модули Python
 
-## Тема 5. Базовые коллекции: строки и списки
+## * [Тема 5. Базовые коллекции: строки и списки](https://github.com/golonr1na/Software_Engineering/blob/Тема_5/Tema_5.md)
 
 5.1. Базовые коллекции.
 
@@ -95,7 +96,7 @@ https://github.com/golonr1na/Software_Engineering/blob/Тема_2/Tema_2.md
 
 5.3. Списки.
 
-## Тема 6. Базовые коллекции: словари, кортежи
+## * [Тема 6. Базовые коллекции: словари, кортежи](https://github.com/golonr1na/Software_Engineering/blob/Тема_6/Tema_6.md)
 
 6.1. Словари
 
@@ -111,11 +112,11 @@ https://github.com/golonr1na/Software_Engineering/blob/Тема_2/Tema_2.md
 
 6.7. Кортеж как параметр и результат функций
 
-## Тема 7.  Работа с файлами (ввод, вывод)
+## * [Тема 7.  Работа с файлами (ввод, вывод)](https://github.com/golonr1na/Software_Engineering/blob/Тема_7/Tema_7.md)
 
 7.1. Работа с файлами txt
 
-## Тема 8.  Основы объектно-ориентированного программирования
+## * [Тема 8.  Основы объектно-ориентированного программирования](https://github.com/golonr1na/Software_Engineering/blob/Тема_8/Tema_8.md)
 
 8.1. Классы и объекты:
 
@@ -127,7 +128,7 @@ https://github.com/golonr1na/Software_Engineering/blob/Тема_2/Tema_2.md
 
 8.5. Полиморфизм.
 
-## Тема 9.  ООП на Python: концепции, принципы и примеры реализации
+## * [Тема 9.  ООП на Python: концепции, принципы и примеры реализации](https://github.com/golonr1na/Software_Engineering/blob/Тема_9/Tema_9.md)
 
 9.1. Классы
 
@@ -147,7 +148,7 @@ https://github.com/golonr1na/Software_Engineering/blob/Тема_2/Tema_2.md
 
  
 
-## Тема 10.  Декораторы и исключения
+## * [Тема 10.  Декораторы и исключения](https://github.com/golonr1na/Software_Engineering/blob/Тема_10/Tema_10.md)
 
 10.1. Декораторы
 
@@ -169,7 +170,7 @@ https://github.com/golonr1na/Software_Engineering/blob/Тема_2/Tema_2.md
 
 10.10. Создание своих исключений
 
-## Тема 11.  Итераторы и генераторы
+## * [Тема 11.  Итераторы и генераторы](https://github.com/golonr1na/Software_Engineering/blob/Тема_11/Tema_11.md)
 
 11.1. Итераторы
 

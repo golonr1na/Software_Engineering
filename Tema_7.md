@@ -171,78 +171,224 @@
 ## Самостоятельная работа №1
 ### Найдите в интернете любую статью (объем статьи не менее 200 слов), скопируйте ее содержимое в файл и напишите программу, которая считает количество слов в текстовом файле и определит самое часто встречающееся слово. Результатом выполнения задачи будет: скриншот файла со статьей, листинг кода, и вывод в консоль, в котором будет указана вся необходимая информация.
 
-```python
+Файл 's1.txt' - https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/codes/s1.txt
 
+```python
+import re
+
+file = open('s1.txt', 'r', encoding='utf-8-sig')
+words = file.read().split()
+stopwords = ['в', 'на', 'и', 'с', 'к', 'а']
+print(f'Длина статьи: {len(words)} слов.')
+
+
+def clean_text(words, stopwords):
+    words = [re.sub(r'[,()."—:«»]', '', i) for i in words if i not in stopwords and len(i) > 1]
+    return words
+
+
+def find_most_frequent(words):
+    words = clean_text(words, stopwords)
+    num_freq = {}
+    for word in words:
+        num_freq[word] = num_freq.get(word, 0) + 1
+    sorted_num_freq = sorted(num_freq.items(), key=lambda item: item[1])
+    top = sorted_num_freq[-1]
+    return top
+
+
+res = find_most_frequent(words)
+print(f'Самое встречающееся слово: "{res[0]}". Встречается {res[1]} раз.')
+
+file.close()
 ```
 
 ### Результат
+Содержимое текстового файла:
+![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/pictures/s1_f.png)
 
-![Меню]()
+Результат выполнения программы:
+![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/pictures/s1.png)
 
 ### Выводы
 
-
+В этом упражнении мы изучили способы работы с текстовыми файлами, такие как чтение файла и обработка его содержимого, например, разделение текста на отдельные слова. Мы делим текст на слова и создаем словарь, в котором каждому слову соответствует количество его появлений. Затем мы сортируем значения (частоты) в порядке возрастания и выводим самую часто встречающуюся пару слов. Модуль `re`, который позволяет работать с регулярными выражениями, полезен для удаления знаков препинания из текста.
   
 ## Самостоятельная работа №2
 ### У вас появилась потребность в ведении книги расходов, посмотрев все существующие варианты вы пришли к выводу что вас ничего не устраивает и нужно все делать самому. Напишите программу для учета расходов. Программа должна позволять вводить информацию о расходах, сохранять ее в файл и выводить существующие данные в консоль. Ввод информации происходит через консоль. Результатом выполнения задачи будет: скриншот файла с учетом расходов, листинг кода, и вывод в консоль, с демонстрацией работоспособности программы.
 
 ```python
+import csv
 
+def record_expenses(expenses):
+    date = input('Введите дату: ')
+    category = input('Введите категорию: ')
+    amount = float(input('Введите сумму: '))
+    expenses.append({'date': date, 'category': category, 'amount': amount})
+    with open('expenses.csv', 'a', newline='') as file:
+        fieldnames = ['date', 'category', 'amount']
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        if file.tell() == 0:
+            writer.writeheader()
+        writer.writerow(expenses[-1])
+
+def view_expenses(expenses):
+    with open('expenses.csv', 'r', newline='') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            print(f"{row['date']}, {row['category']}, {row['amount']}")
+
+expenses = []
+
+while True:
+    print('1. Добавить запись')
+    print('2. Просмотреть записи')
+    choice = int(input('Введите номер действия: '))
+
+    if choice == 1:
+        record_expenses(expenses)
+    elif choice == 2:
+        view_expenses(expenses)
+        break
 ```
 
 ### Результат
 
-![Меню]()
+Файл 'expences.csv' - https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/codes/expenses.csv
+
+![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/pictures/s2.png)
 
 ### Выводы
 
-
+В этом задании мы изучили основы работы с файлами в формате CSV, включая чтение данных из них и запись в них. Классы DictWriter и DictReader из модуля csv позволяют работать с данными в формате словаря. Условие цикла while может содержать логический тип данных.
   
 ## Самостоятельная работа №3
 ### Имеется файл input.txt с текстом на латинице. Напишите программу, которая выводит следующую статистику по тексту: количество букв латинского алфавита; число слов; число строк.
 
-```python
+Файл 'inputS3.txt' - https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/codes/inputS3.txt
 
+```python
+import re
+
+file = open('inputS3.txt', 'r', encoding='utf-8-sig')
+
+number_of_words = 0
+number_of_lines = 0
+number_of_characters = 0
+
+for string in file:
+    number_of_words += len(string.split())
+    number_of_lines += 1
+    for letter in string:
+        number_of_characters += 1 if re.match(r'[a-zA-Z]+', letter) else 0
+
+print('Input file contains:', f'{number_of_characters} letters', f'{number_of_words} words', f'{number_of_lines} lines',
+      sep='\n')
+
+file.close()
 ```
+
+
 
   ### Результат
 
-![Меню]()
+![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/pictures/s3.png)
 
 ### Выводы
 
+Данный код открывает файл с именем 'inputS3.txt' и считает количество символов, слов и строк в этом файле. Для этого используются следующие методы и функции:
 
+Функция `open()`: для открытия файла 'inputS3.txt' в режиме чтения ('r') с указанием кодировки ('utf-8-sig').
+
+Цикл `for string in file:`: для обхода всех строк в файле.
+
+Метод `split()`: для разделения строки на слова и подсчета количества слов.
+
+Модуль `re`: для работы с регулярными выражениями. В данном случае используется метод re.match(), чтобы проверить, является ли символ буквой.
+
+Метод `match()`: для сопоставления символа с заданным шаблоном регулярного выражения.
+
+Метод `close()`: для закрытия файла после завершения работы с ним.
   
 ## Самостоятельная работа №4
 ### Напишите программу, которая получает на вход предложение, выводит его в терминал, заменяя все запрещенные слова звездочками * (количество звездочек равно количеству букв в слове). Запрещенные слова, разделенные символом пробела, хранятся в текстовом файле input.txt. Все слова в этом файле записаны в нижнем регистре. Программа должна заменить запрещенные слова, где бы они ни встречались, даже в середине другого слова. Замена производится независимо от регистра: если файл input.txt содержит запрещенное слово exam, то слова exam, Exam, ExaM, EXAM и exAm должны быть заменены на ****.
-  
-```python
 
+Файл 'inputS4.txt' - https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/codes/inputS4.txt
+
+```python
+import re
+
+file = open('inputS4.txt', 'r', encoding='utf-8-sig')
+stopwords = file.read().split()
+string = '''Hello, world! Python IS the programming language of thE future. My EMAIL is....
+PYTHON is awesome!!!!'''
+
+
+def censor_text(string, stopwords):
+    for stopword in stopwords:
+        string = re.sub(stopword, lambda x: '*' * len(x.group()), string, flags=re.IGNORECASE)
+    return string
+
+
+res = censor_text(string, stopwords)
+print(res)
+
+file.close()
 ```
 
 ### Результат
 
-![Меню]()
+![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/pictures/s4.png)
 
 ### Выводы
 
+Данный код открывает файл 'inputS4.txt', считывает из него стоп-слова и затем производит цензуру этих стоп-слов в заданной строке.
 
+Функция `re.sub()` используется для замены стоп-слов на символ "*". Флаг `re.IGNORECASE` указывает на то, что замена должна быть регистронезависимой.
+
+Затем функция `censor_text` вызывается с аргументами string и stopwords, и результат сохраняется в переменную res, которая затем выводится на экран.
+
+Наконец, файл закрывается с помощью метода `close()`.
+
+Таким образом, код заменяет все стоп-слова в строке на символ "*" и выводит censored строку на экран.
   
 ## Самостоятельная работа №5
 ### Самостоятельно придумайте и решите задачу, которая будет взаимодействовать с текстовым файлом.
-### Программа должна создать файл с именем random.txt и записать в него случайные числа от 1 до 10 в количестве 25 штук.
+#### Создать текстовый файл “data.txt” и записать в него числа от 1 до 100, каждое на новой строке. Затем прочитать этот файл и вывести на экран сумму всех чисел.
   
 ```python
+with open("data.txt", "w") as f:
+    print("Создан файл data.txt")
+    for i in range(1, 101):
+        f.write(str(i) + "\n")
 
+total = 0
+with open("data.txt", "r") as f:
+    for line in f:
+        total += int(line)
+
+print("Сумма чисел в файле:", total)
 ```
 
 ### Результат
 
-![Меню]()
+Файл data.txt - https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/codes/data.txt
+
+![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/pictures/s5.png)
 
 ### Выводы
 
+В данном коде использовались следующие функции и методы:
 
+`open()`: Функция для открытия файла в режиме записи ("w") или чтения ("r").
+Метод `write()`: Используется для записи строки в файл.
+Метод `read()`: Используется для чтения содержимого файла.
+Метод `strip()`: Используется для удаления символов (пробелы, символы новой строки и т.д.) из строки.
+Метод `int()`: Используется для преобразования строки в целое число.
+Метод `range()`: Используется для генерации последовательности чисел от 1 до 100.
+`with`: Контекстный менеджер для автоматического закрытия файла после выполнения блока кода внутри него.
+
+Эти функции и методы совместно позволяют создать файл, записать в него числа, считать их обратно, вычислить их сумму и вывести результат на экран.
 
 ## Общие выводы по теме
 

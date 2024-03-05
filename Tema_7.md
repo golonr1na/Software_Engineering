@@ -171,7 +171,7 @@
 ## Самостоятельная работа №1
 ### Найдите в интернете любую статью (объем статьи не менее 200 слов), скопируйте ее содержимое в файл и напишите программу, которая считает количество слов в текстовом файле и определит самое часто встречающееся слово. Результатом выполнения задачи будет: скриншот файла со статьей, листинг кода, и вывод в консоль, в котором будет указана вся необходимая информация.
 
-Файл 's1.txt' - https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/codes/s1.txt
+Файл ['s1.txt'](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/codes/s1.txt)
 
 ```python
 import re
@@ -254,7 +254,7 @@ while True:
 
 ### Результат
 
-Файл 'expences.csv' - https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/codes/expenses.csv
+Файл ['expences.csv'](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/codes/expenses.csv)
 
 ![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/pictures/s2.png)
 
@@ -264,7 +264,7 @@ while True:
 ## Самостоятельная работа №3
 ### Имеется файл input.txt с текстом на латинице. Напишите программу, которая выводит следующую статистику по тексту: количество букв латинского алфавита; число слов; число строк.
 
-Файл 'inputS3.txt' - https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/codes/inputS3.txt
+Файл ['inputS3.txt'](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/codes/inputS3.txt)
 
 ```python
 import re
@@ -312,7 +312,7 @@ file.close()
 ## Самостоятельная работа №4
 ### Напишите программу, которая получает на вход предложение, выводит его в терминал, заменяя все запрещенные слова звездочками * (количество звездочек равно количеству букв в слове). Запрещенные слова, разделенные символом пробела, хранятся в текстовом файле input.txt. Все слова в этом файле записаны в нижнем регистре. Программа должна заменить запрещенные слова, где бы они ни встречались, даже в середине другого слова. Замена производится независимо от регистра: если файл input.txt содержит запрещенное слово exam, то слова exam, Exam, ExaM, EXAM и exAm должны быть заменены на ****.
 
-Файл 'inputS4.txt' - https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/codes/inputS4.txt
+Файл ['inputS4.txt'](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/codes/inputS4.txt)
 
 ```python
 import re
@@ -371,7 +371,8 @@ print("Сумма чисел в файле:", total)
 
 ### Результат
 
-Файл data.txt - https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/codes/data.txt
+Файл ['data.txt'](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/codes/data.txt)
+
 
 ![Меню](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_7/pictures/s5.png)
 

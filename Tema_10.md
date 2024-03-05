@@ -131,8 +131,8 @@ if __name__ == '__main__':
 ## Самостоятельная работа №2
 ### Посмотрев на Вовочку, вы также загорелись идеей спортивного программирования, начав тренировки вы узнали, что для решения некоторых задач необходимо считывать данные из файлов. Но через некоторое время вы столкнулись с проблемой что файлы бывают пустыми, и вы не получаете вводные данные для решения задачи. После этого вы решили не просто считывать данные из файла, а всю конструкцию оборачивать в исключения, чтобы избежать такой проблемы. Создайте пустой файл и файл, в котором есть какая-то информация. Напишите код программы. Если файл пустой, то, нужно вызвать исключение (“бросить исключение”) и вывести в консоль “файл пустой”, а если он не пустой, то вывести информацию из файла.
 
-Файл 'empty.txt' - https://github.com/golonr1na/Software_Engineering_python/blob/Тема_10/codes/empty.txt
-Файл 'notempty.txt' - https://github.com/golonr1na/Software_Engineering_python/blob/Тема_10/codes/notempty.txt
+Файл ['empty.txt'](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_10/codes/empty.txt)
+Файл ['notempty.txt'](https://github.com/golonr1na/Software_Engineering_python/blob/Тема_10/codes/notempty.txt)
 
 ```python
 def read_file(filename):
